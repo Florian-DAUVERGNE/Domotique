@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domotique</title>
+  <link rel="icon" type="image/x-icon" href="home.png">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="chart.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="preload" href="LedEteinte.png" as="image">
+  <link rel="preload" href="LedAllume.png" as="image">
+</head>
+<body>
+  <div class="container">
+    <nav ></nav>
+    <main>
+      <p>10:45:10</p>
+      <div id="temperature">Température actuelle : 25°C</div>
+      <div id="PI">Puissance instantanée : 400w</div>
+    </main>
+    <div id="sidebar">
+      <div id="switch1">Portail
+        <br>
+        <label class="switch">
+          <input type="checkbox"/>
+          <div></div>
+        </label>
+        <img src="LedEteinte.png" height="35px" width="35px">
+      </div>
+      
+      <div id="switch2">Alarme
+        <br>
+        <label class="switch">
+          <input type="checkbox"/>
+          <div></div>
+        </label>
+        <img src="LedEteinte.png" height="35px" width="35px">
+      </div>
+      
+      <div id="switch3" >Éclairage porte d'entrée
+        <br>
+        <label class="switch">
+          <input disabled type="checkbox"/>
+          <div></div>
+        </label>
+        <img src="LedHS.png" height="35px" width="35px">
+      </div>
+
+      <div id="switch4" >Relai 4
+        <br>
+        <label class="switch">
+          <input type="checkbox"/>
+          <div></div>
+        </label>
+        <img src="LedEteinte.png" height="35px" width="35px">
+      </div>
+      
+      <div id="switch5" >Relai 5
+        <br>
+        <label class="switch">
+          <input type="checkbox"/>
+          <div></div>
+        </label>
+        <img src="LedEteinte.png" height="35px" width="35px">
+      </div>
+
+      <div id="switch6" >Relai 6
+        <br>
+        <label class="switch">
+          <input type="checkbox"/>
+          <div></div>
+        </label>
+        <img src="LedEteinte.png" height="35px" width="35px">
+      </div>
+
+      <div id="switch7" >Relai 7
+        <br>
+        <label class="switch">
+          <input type="checkbox"/>
+          <div></div>
+        </label>
+        <img src="LedEteinte.png" height="35px" width="35px">
+      </div>
+      <div id="JourNuit" >
+        <img src="sun.png" height="50px" width="50px">
+      </div>
+    </div>
+    <div id="content1"><canvas width="250px" height="250px"></canvas></div>
+    <div id="content2"><canvas width="250px" height="250px"></canvas></div>
+    <div id="content3"><canvas width="250px" height="250px"></canvas></div>
+    <div id="content4"><canvas width="250px" height="250px"></canvas></div>
+  </div>
+</body>
+</html>
+
